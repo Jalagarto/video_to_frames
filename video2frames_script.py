@@ -43,3 +43,11 @@ def video2frames(args):
         index += 1
     vid.release()
     return fps
+
+
+if __name__=='__main__':
+    args = {}
+    args['video'] = '/home/pi/results/my_video.h264'
+    args['im_or_folder'] = '/home/pi/results/frames_from_video'
+    video2frames(args)
+
